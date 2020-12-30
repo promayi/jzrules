@@ -1,2 +1,2 @@
-HOST,emby.xeton.dev,Emby
-HOST,movie.xeton.dev,Emby
+HOST-SUFFIX,xeton.dev,Emby
+HOST-SUFFIX,emby.wtf,Emby
