@@ -5,84 +5,13 @@ mixed-port: 8899
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 0.0.0.0:6170
+external-controller: 0.0.0.0:9090
 experimental:
   ignore-resolve-fail: true
-#clash-for-android:
-#  ui-subtitle-pattern: '[一-龥]{2,4}'
+
 
 proxies:
-- name: "SH-HK"
-  type: trojan
-  server: cn2.dywr.org
-  port: 10089
-  password: bc99a55f-3379-30ca-bc56-4a45bfa83f59
-  udp: true
-  skip-cert-verify: true
 
-- name: "GZ-HK"
-  type: trojan
-  server: gz-hk1.dotunnel.monster
-  port: 10086
-  password: bc99a55f-3379-30ca-bc56-4a45bfa83f59
-  udp: true
-  skip-cert-verify: true
-
-- name: "HK-IEPL"
-  type: ss
-  server: 14.17.97.133
-  port: 33909
-  cipher: rc4-md5
-  password: myNJja
-  udp: true
-
-- name: "HK-CEN"
-  type: ss
-  server: 47.107.245.69
-  port: 33909
-  cipher: rc4-md5
-  password: myNJja
-  udp: true
-
-- name: "GZ-SG"
-  type: trojan
-  server: gz-hk1.dotunnel.monster
-  port: 10096
-  password: bc99a55f-3379-30ca-bc56-4a45bfa83f59
-  udp: true
-  skip-cert-verify: true
-
-- name: "SH-SG"
-  type: trojan
-  server: cn2.dywr.org
-  port: 10090
-  password: bc99a55f-3379-30ca-bc56-4a45bfa83f59
-  udp: true
-  skip-cert-verify: true
-
-- name: "SH-US"
-  type: trojan
-  server: cn2.dywr.org
-  port: 10092
-  password: bc99a55f-3379-30ca-bc56-4a45bfa83f59
-  udp: true
-  skip-cert-verify: true
-
-- name: "SH-TW"
-  type: trojan
-  server: cn2.dywr.org
-  port: 10091
-  password: bc99a55f-3379-30ca-bc56-4a45bfa83f59
-  udp: true
-  skip-cert-verify: true
-
-- name: "US-Portland"
-  type: trojan
-  server: trojan-us5.dywr.org
-  port: 443
-  password: bc99a55f-3379-30ca-bc56-4a45bfa83f59
-  udp: true
-  skip-cert-verify: true
 
 
 
@@ -90,16 +19,7 @@ proxy-groups:
 - name: Proxy
   type: select
   proxies:
-  - HK-Fallback
-  - "SH-HK"
-  - "GZ-HK"
-  - "HK-IEPL"
-  - "HK-CEN"
-  - "GZ-SG"
-  - "SH-SG"
-  - "SH-US"
-  - "SH-TW"
-  - "US-Portland"
+
 
 - name: Domestic
   type: select
@@ -146,18 +66,18 @@ proxy-groups:
 - name: YouTube
   type: select
   proxies:
-  - "HK-Fallback"
+
 
 - name: Disney
   type: select
   proxies:
-  - "SH-US"
+
 
 - name: Telegram
   type: select
   proxies:
   - Proxy
-  - "HK-CEN"
+
 
 - name: Speedtest
   type: select
@@ -169,21 +89,16 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - "US-Portland"
-  - "SH-TW"
+
 
 - name: Emby
   type: select
   proxies:
-  - "SH-HK"
-  - "HK-IEPL"
+
 
 - name: HK-Fallback
   type: fallback
   proxies:
-  - "SH-HK"
-  - "GZ-HK"
-  - "HK-IEPL"
 
   url: http://www.gstatic.com/generate_204
   interval: "3600"
@@ -191,8 +106,6 @@ proxy-groups:
 - name: SG-Fallback
   type: fallback
   proxies:
-  - "GZ-SG"
-  - "SH-SG"
 
   url: http://www.gstatic.com/generate_204
   interval: "360"
