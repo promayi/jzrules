@@ -507,7 +507,7 @@ rule-providers:
   Emby:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/promayi/jzrules/master/Clash/Rules/Emby.yaml
+    url: https://cdn.jsdelivr.net/gh/promayi/jzrules@master/Clash/Rules/Emby.yaml
     path: ./Rules/Emby
     interval: 86400
   PROXY:
