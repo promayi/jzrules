@@ -9,6 +9,12 @@ external-controller: 0.0.0.0:9090
 experimental:
   ignore-resolve-fail: true
 
+hosts:
+  # Firebase Cloud Messaging
+  'mtalk.google.com': 108.177.125.188
+  # Google Dl
+  'dl.google.com': 180.163.151.161
+  'dl.l.google.com': 180.163.151.161
 
 proxies:
 
