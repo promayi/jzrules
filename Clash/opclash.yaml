@@ -10,7 +10,7 @@ experimental:
   ignore-resolve-fail: true
 
 profile:
-  store-selected: false
+  store-selected: true
   tracing: true
 
 hosts:
