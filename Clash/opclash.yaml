@@ -9,6 +9,10 @@ external-controller: 0.0.0.0:9090
 experimental:
   ignore-resolve-fail: true
 
+profile:
+  store-selected: false
+  tracing: true
+
 hosts:
   # Firebase Cloud Messaging
   'mtalk.google.com': 108.177.125.188
@@ -18,14 +22,10 @@ hosts:
 
 proxies:
 
-
-
-
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
-
 
 - name: Domestic
   type: select
@@ -69,21 +69,23 @@ proxy-groups:
   proxies:
   - "SG-Fallback"
 
+- name: PrimeVideo
+  type: select
+  proxies:
+  - Proxy
+
 - name: YouTube
   type: select
   proxies:
-
 
 - name: Disney
   type: select
   proxies:
 
-
 - name: Telegram
   type: select
   proxies:
   - Proxy
-
 
 - name: Speedtest
   type: select
@@ -96,11 +98,9 @@ proxy-groups:
   proxies:
   - DIRECT
 
-
 - name: Emby
   type: select
   proxies:
-
 
 - name: HK-Fallback
   type: fallback
@@ -133,7 +133,7 @@ rules:
 - RULE-SET,WeTV,AsianTV
 - RULE-SET,ABC,GlobalTV
 - RULE-SET,Abema TV,GlobalTV
-- RULE-SET,Amazon,GlobalTV
+- RULE-SET,PrimeVideo,PrimeVideo
 - RULE-SET,Apple News,GlobalTV
 - RULE-SET,Apple TV,GlobalTV
 - RULE-SET,Bahamut,GlobalTV
@@ -189,7 +189,7 @@ script:
             "WeTV": "AsianTV",
             "ABC": "GlobalTV",
             "Abema TV": "GlobalTV",
-            "Amazon": "GlobalTV",
+            "PrimeVideo": "PrimeVideo",
             "Apple News": "GlobalTV",
             "Apple TV": "GlobalTV",
             "Bahamut": "GlobalTV",
@@ -330,7 +330,7 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Abema%20TV.yaml
     path: ./Rules/Media/Abema_TV
     interval: 86400
-  Amazon:
+  PrimeVideo:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Amazon.yaml
