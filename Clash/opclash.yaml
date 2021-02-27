@@ -102,6 +102,11 @@ proxy-groups:
   type: select
   proxies:
 
+- name: Expected
+  type: select
+  proxies:
+  - DIREC
+
 - name: HK-Fallback
   type: fallback
   proxies:
@@ -123,6 +128,7 @@ rules:
 - RULE-SET,Netflix,Netflix
 #- RULE-SET,Spotify,Spotify
 - RULE-SET,YouTube,YouTube
+- RULE-SET,Expected,Expected
 - RULE-SET,Disney Plus,Disney
 - RULE-SET,Bilibili,AsianTV
 - RULE-SET,iQiyi,AsianTV
@@ -183,6 +189,7 @@ script:
             "Bilibili": "AsianTV",
             "iQiyi": "AsianTV",
             "Letv": "AsianTV",
+            "Expected": "Expected",
             "Netease Music": "AsianTV",
             "Tencent Video": "AsianTV",
             "Youku": "AsianTV",
@@ -515,6 +522,12 @@ rule-providers:
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/promayi/jzrules@master/Clash/Rules/Emby.yaml
     path: ./Rules/Emby
+    interval: 86400
+  Expected:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/promayi/jzrules@master/Clash/Rules/IPInfo.yaml
+    path: ./Rules/Expected
     interval: 86400
   PROXY:
     type: http
