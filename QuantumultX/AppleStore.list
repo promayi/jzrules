@@ -1,0 +1,6 @@
+HOST-SUFFIX,appstore.com,AppStore
+USER-AGENT,AppStore*,AppStore
+USER-AGENT,com.apple.appstored*,AppStore
+USER-AGENT,TestFlight*,AppStore
+HOST,apps.apple.com,AppStore
+HOST,itunes.apple.com,AppStore
