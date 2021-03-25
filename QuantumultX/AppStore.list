@@ -4,3 +4,6 @@ USER-AGENT,com.apple.appstored*,AppStore
 USER-AGENT,TestFlight*,AppStore
 HOST,apps.apple.com,AppStore
 HOST,itunes.apple.com,AppStore
+HOST,beta.apple.com,AppStore
+HOST,testflight.apple.com,AppStore
+HOST-KEYWORD,testflight,AppStore
