@@ -3,4 +3,4 @@ DOMAIN-SUFFIX,emby.wtf
 DOMAIN-SUFFIX,plusmedia.site
 DOMAIN-SUFFIX,jmsooo.com
 DOMAIN-KEYWORD,emby
-DOMAIN,emby
+IP-CIDR,38.94.111.0/24
