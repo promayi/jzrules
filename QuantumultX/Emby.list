@@ -3,3 +3,4 @@ HOST-SUFFIX,emby.wtf,Emby
 HOST-SUFFIX,plusmedia.site,Emby
 HOST-SUFFIX,jmsooo.com,Emby
 HOST-KEYWORD,emby,Emby
+IP-CIDR,338.94.111.0/24,Emby
