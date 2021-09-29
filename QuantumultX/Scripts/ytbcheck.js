@@ -10,7 +10,7 @@ For Quantumult-X / [task-local]
 
 const BASE_URL = 'https://www.youtube.com/premium'
 
-const link = { "media-url": "https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/img/southpark/7.png" } 
+const link = { "media-url": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png" } 
 const policy_name = "YouTube" //填入你的 youtube 策略组名
 
 const arrow = "➟"
