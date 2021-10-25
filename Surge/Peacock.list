@@ -1,0 +1,5 @@
+# NAME: Peacock
+DOMAIN-SUFFIX,peacocktv.com
+DOMAIN-SUFFIX,sc.omtrdc.net
+DOMAIN-SUFFIX,optimizely.com
+USER-AGENT,PeacockMobile*
