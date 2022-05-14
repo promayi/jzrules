@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,plusmedia.site
 DOMAIN-SUFFIX,jmsooo.com
 DOMAIN-SUFFIX,kyarucloud.moe
 DOMAIN-SUFFIX,emby.prprcloud.com
+DOMAIN-SUFFIX,play.charontv.com
 DOMAIN-KEYWORD,emby
 IP-CIDR,38.94.111.0/24
 # Cloudflare
@@ -21,3 +22,5 @@ IP-CIDR,162.158.0.0/15
 IP-CIDR,104.16.0.0/12
 IP-CIDR,172.64.0.0/13
 IP-CIDR,131.0.72.0/22
+IP-CIDR,104.16.0.0/13
+IP-CIDR,104.24.0.0/14
