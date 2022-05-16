@@ -4,7 +4,7 @@ DOMAIN-SUFFIX,plusmedia.site
 DOMAIN-SUFFIX,jmsooo.com
 DOMAIN-SUFFIX,kyarucloud.moe
 DOMAIN-SUFFIX,emby.prprcloud.com
-DOMAIN-SUFFIX,play.charontv.com
+DOMAIN,play.charontv.com
 DOMAIN-KEYWORD,emby
 IP-CIDR,38.94.111.0/24
 # Cloudflare
