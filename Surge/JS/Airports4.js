@@ -26,7 +26,7 @@
 
   $done({
     //title: `𝗗𝗹𝗲𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱 : 2023/3/14`,
-    title: `𝗗𝗹𝗲𝗿 | ${usedsizeGB} GB | ${totalsizeGB} GB`,
+    title: `𝗗𝗹𝗲𝗿 | ${usedsizeGB} GB | ${totalsizeGB} GB | ${toPercent(proportion)}`,
     content: content.join("\n"),
   });
 })();
