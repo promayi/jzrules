@@ -24,7 +24,7 @@
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `𝗣𝗿𝗽𝗿 | 𝘙𝘦𝘴𝘦𝘵: ${resetDayLeft} days.`,
+    title: `𝗣𝗿𝗽𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days.`,
     content: content.join("\n"),
   });
 })();
