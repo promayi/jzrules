@@ -9,7 +9,7 @@
   let proportion = used / total;
   let expire = args.expire || info.expire;
   let usedsize = used / 1073741824;
-  let usedsizeGB = usedsize.toFixed(2)
+  let usedsizeGB = usedsize.toFixed(1)
   let totalsize = total / 1073741824;
   let totalsizeGB = totalsize.toFixed(0)
   /*
