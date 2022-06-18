@@ -12,7 +12,10 @@
   let usedsizeGB = usedsize.toFixed(2)
   let totalsize = total / 1073741824;
   let totalsizeGB = totalsize.toFixed(2)
+  /*
   let content = [`Used: ${toPercent(proportion)}, ${usedsizeGB} GB, Total: ${totalsizeGB} GB`];
+  */
+  let content = [`Used: ${usedsizeGB} GB. Total: ${totalsizeGB} GB`];
 
   let now = new Date();
   let hour = now.getHours();
@@ -21,7 +24,7 @@
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `Prpr | Reset: ${resetDayLeft} days.`,
+    title: `𝗣𝗿𝗽𝗿 | 𝘙𝘦𝘴𝘦𝘵: ${resetDayLeft} days.`,
     content: content.join("\n"),
   });
 })();
