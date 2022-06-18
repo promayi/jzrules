@@ -8,7 +8,7 @@
   let total = info.total;
   let proportion = used / total;
   let expire = args.expire || info.expire;
-  let content = [ used | total];
+  let content = [ `${used} | ${total}`];
 
   let now = new Date();
   let hour = now.getHours();
