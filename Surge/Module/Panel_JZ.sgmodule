@@ -1,6 +1,11 @@
+#!name=Panels
+#!desc=Surge Panel
+#!system=ios
 
 
 [Panel]
+# macOS不生效
+
 #Surge
 functionstatus = script-name=functionstatus,update-interval=14400
 
@@ -9,7 +14,6 @@ Sub_info5 = script-name=Sub_info5,update-interval=14400
 Sub_info2 = script-name=Sub_info2,update-interval=14400
 Sub_info3 = script-name=Sub_info3,update-interval=14400
 Sub_info4 = script-name=Sub_info4,update-interval=14400
-
 
 
 
