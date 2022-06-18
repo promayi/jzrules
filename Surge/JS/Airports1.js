@@ -10,7 +10,9 @@
   let expire = args.expire || info.expire;
   let usedsize = used / 1073741824;
   let usedsizeGB = usedsize.toFixed(2)
-  let content = [`${toPercent(proportion)}, ${usedsizeGB} GB`];
+  let totalsize = total / 1073741824;
+  let totalsizeGB = totalsize.toFixed(2)
+  let content = [`Used: ${toPercent(proportion)} - ${usedsizeGB} GB | Total: ${totalsizeGB} GB`];
 
   let now = new Date();
   let hour = now.getHours();
