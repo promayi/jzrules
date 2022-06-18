@@ -24,7 +24,7 @@
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `𝗧𝗲𝘅𝗼𝗻 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days | ${formatTime(expire)}`,
+    title: `𝗧𝗲𝘅𝗼𝗻 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱 : 2022/9/6}`,
     content: content.join("\n"),
   });
 })();
@@ -57,7 +57,7 @@ function getUserInfo(url) {
         resolve(resp.headers[header]);
         return;
       }
-      reject("鏈惈娴侀噺淇℃伅");
+      reject("链接响应头不带有流量信息");
     })
   );
 }
