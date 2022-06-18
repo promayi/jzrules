@@ -16,12 +16,14 @@ if ($trigger == "button") {
 	$notification.post("配置重载","配置重载成功","")
 };
 $done({
-    title:"Surge  Running"+startTime,
+    title: `Surge  Running +startTime`,
     //content:"Mitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled),
     //icon: icon_s?"checkmark.seal":"exclamationmark.triangle",
    //"icon-color":icon_s?"#16A951":"#FF7500"
 });
 })();
+
+/*
 function icon_status(status){
   if (status){
     return "\u2611";
@@ -29,6 +31,8 @@ function icon_status(status){
       return "\u2612"
     }
 }
+*/
+
 function timeTransform(dateNow,dateTime) {
 let dateDiff = dateNow - dateTime;
 let days = Math.floor(dateDiff / (24 * 3600 * 1000));//计算出相差天数
