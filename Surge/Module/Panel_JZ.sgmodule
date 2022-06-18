@@ -1,3 +1,5 @@
+
+
 [Panel]
 #Surge
 functionstatus = script-name=functionstatus,update-interval=14400
