@@ -8,7 +8,7 @@
   let total = info.total;
   let proportion = used / total;
   let expire = args.expire || info.expire;
-  let usedsize = used / 1073741824
+  let usedsize = used / 1073741824;
   let content = [`${toPercent(proportion)}, ${usedsize} GB`];
 
   let now = new Date();
