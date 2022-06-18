@@ -24,7 +24,7 @@
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `𝗣𝗿𝗽𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days | ${formatTime(expire)}`,
+    title: `𝗣𝗿𝗽𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱𝘪𝘳𝘦: 2022/11/10}`,
     content: content.join("\n"),
   });
 })();
