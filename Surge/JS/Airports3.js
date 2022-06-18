@@ -27,7 +27,7 @@
 
   $done({
     //title: `𝗣𝗿𝗽𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱: 2022/11/10`,
-    title: `𝗣𝗿𝗽𝗿 | ${usedsizeGB} GB | ${totalsizeGB} GB`,
+    title: `𝗣𝗿𝗽𝗿 | ${usedsizeGB} GB | ${totalsizeGB} GB | ${toPercent(proportion)}`,
     content: content.join("\n"),
   });
 })();
