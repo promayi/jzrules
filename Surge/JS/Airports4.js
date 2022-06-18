@@ -15,7 +15,8 @@
   /*
   let content = [`Used: ${toPercent(proportion)}, ${usedsizeGB} GB, Total: ${totalsizeGB} GB`];
   */
-  let content = [`Used: ${usedsizeGB} GB. Total: ${totalsizeGB} GB`];
+  //let content = [`Used: ${usedsizeGB} GB. Total: ${totalsizeGB} GB`];
+  let content = [`𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days | 𝘌𝘹𝘱 : 2023-3-14`];
 
   let now = new Date();
   let hour = now.getHours();
@@ -24,7 +25,8 @@
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `𝗗𝗹𝗲𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱 : 2023/3/14`,
+    //title: `𝗗𝗹𝗲𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱 : 2023/3/14`,
+    title: `𝗗𝗹𝗲𝗿 | ${usedsizeGB} GB | ${totalsizeGB} GB`,
     content: content.join("\n"),
   });
 })();
