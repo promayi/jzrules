@@ -24,7 +24,7 @@
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `𝗧𝗲𝘅𝗼𝗻 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days. | 𝘌𝘹𝘱𝘪𝘳𝘦 : ${expire}`,
+    title: `𝗧𝗲𝘅𝗼𝗻 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days. | OK`,
     content: content.join("\n"),
   });
 })();
