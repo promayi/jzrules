@@ -16,7 +16,7 @@
   let content = [`Used: ${toPercent(proportion)}, ${usedsizeGB} GB, Total: ${totalsizeGB} GB`];
   */
   //let content = [`Used: ${usedsizeGB} GB. Total: ${totalsizeGB} GB`];
-  let content = [`𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days | 𝘌𝘹𝘱 : 2022-9-6`];
+  let content = [`𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days | 𝘌𝘹𝘱 : ${expire}`];
 
   let now = new Date();
   let hour = now.getHours();
