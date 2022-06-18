@@ -1,0 +1,22 @@
+[Panel]
+#Surge
+functionstatus = script-name=functionstatus,update-interval=14400
+
+#Airport
+Sub_info5 = script-name=Sub_info5,update-interval=14400
+Sub_info2 = script-name=Sub_info2,update-interval=14400
+Sub_info3 = script-name=Sub_info3,update-interval=14400
+Sub_info4 = script-name=Sub_info4,update-interval=14400
+
+
+
+
+[Script]
+#Surge
+functionstatus = type=generic, script-path=https://raw.githubusercontent.com/promayi/jzrules/master/Surge/JS/functionstatus.js
+
+#Airport
+Sub_info5 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/promayi/jzrules/master/Surge/JS/Airports5.js,script-update-interval=0,argument=reset_day="流量重置时间(几号)"&expire="套餐过期日期"&url="订阅地址"
+Sub_info2 = 
+Sub_info3 = 
+Sub_info4 = 
