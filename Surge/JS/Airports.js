@@ -9,9 +9,9 @@
   let proportion = used / total;
   let expire = args.expire || info.expire;
   let usedsize = used / 1073741824;
-  let usedsizeGB = usedsize.toFixed(2);
+  let usedsizeGB = usedsize.toFixed(2)
   let totalsize = total / 1073741824;
-  let totalsizeGB = totalsize.toFixed(2);
+  let totalsizeGB = totalsize.toFixed(2)
   /*
   let content = [`Used: ${toPercent(proportion)}, ${usedsizeGB} GB, Total: ${totalsizeGB} GB`];
   */
@@ -24,7 +24,7 @@
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `𝗙𝗹𝗼𝘄𝗲𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days.`,
+    title: `𝗧𝗲𝘅𝗼𝗻 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days.`,
     content: content.join("\n"),
   });
 })();
