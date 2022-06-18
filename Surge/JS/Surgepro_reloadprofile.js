@@ -11,9 +11,7 @@ if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
       title:"Surge Pro",
-      content:`启动时长: ${startTime}`,
-		icon: params.icon,
-		"icon-color":params.color
+      content:`启动时长: ${startTime}`
     });
 
 })();
