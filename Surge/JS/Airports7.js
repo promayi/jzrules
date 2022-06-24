@@ -27,7 +27,7 @@
 
   $done({
     //title: `Imm | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱: 2022/11/10`,
-    title: `Imm | 𝘜𝘴𝘢𝘨𝘦 : ${usedsizeGB} GB, ${toPercent(proportion)}`,
+    title: `𝗜𝗺𝗺 | 𝘜𝘴𝘢𝘨𝘦 : ${usedsizeGB} GB, ${toPercent(proportion)}`,
     content: content.join("\n"),
   });
 })();
