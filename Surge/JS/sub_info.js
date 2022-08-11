@@ -215,6 +215,6 @@ function sleep(ms) {
 }
 
 function toPercent(proportion) {
-  const percent = Number(proportion*100).toFixed(0);
+  const percent = Number(proportion*100).toFixed(2);
   return `${percent}%`
 }
