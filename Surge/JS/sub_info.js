@@ -47,12 +47,12 @@ let resetDayLeft = getRmainingDays(resetDay);
 
   if (resetDayLeft) {
     //infoList.push(`流量重置：剩余${resetDayLeft}天`);
-    infoList.push(`𝘙𝘦𝘴𝘦𝘵s in ${resetDayLeft} Day`);
+    infoList.push(`𝗥𝗲𝘀𝗲𝘁𝘀 in ${resetDayLeft} Day`);
   }
   if (expire) {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
     //infoList.push(`套餐到期：${formatTime(expire)}`);
-    infoList.push(`𝘌𝘹𝘱𝘪𝘳𝘦: ${formatTime(expire)}`);
+    infoList.push(`𝗘𝘅𝗽𝗶𝗿𝗲 : ${formatTime(expire)}`);
   }
   sendNotification(used / total, expire, infoList);
   let body = infoList.map((item, index) => item+localProxy[index]).join("\n");
@@ -132,7 +132,7 @@ function formatTime(time) {
   let month = dateObj.getMonth() + 1;
   let day = dateObj.getDate();
   //return year + "年" + month + "月" + day + "日";
-  return year + "-" + month + "-" + day + "-";
+  return year + "-" + month + "-" + day;
 }
 
 function sendNotification(usageRate, expire, infoList) {
