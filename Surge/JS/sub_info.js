@@ -5,10 +5,10 @@ Surge配置参考注释,感谢@congcong.
 ----------------------------------------
 
 [Proxy Group]
-AmyInfo = select, policy-path=http://sub.info?url=机场节点链接&reset_day=1&alert=1, update-interval=3600
+AmyInfo = select, policy-path=http://sub.jz?url=机场节点链接&reset_day=1&alert=1, update-interval=3600
 
 [Script]
-Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js,timeout=10
+Sub_info = type=http-request,pattern=http://sub\.jz,script-path=https://raw.githubusercontent.com/promayi/jzrules/master/Surge/JS/sub_info.js,timeout=10
 ----------------------------------------
 
 脚本不用修改，直接配置就好。
