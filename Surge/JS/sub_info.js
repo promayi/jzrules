@@ -42,13 +42,13 @@ let resetDayLeft = getRmainingDays(resetDay);
   let used = usage.download + usage.upload;
   let total = usage.total;
   let proportion = used / total;
-  let usedsize = used / 1073741824;
-  let usedsizeGB = usedsize.toFixed(1)
+  //let usedsize = used / 1073741824;
+  //let usedsizeGB = usedsize.toFixed(1)
   let totalsize = total / 1073741824;
   let totalsizeGB = totalsize.toFixed(0)
   let expire = usage.expire || args.expire;
   let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153','=socks5,localhost, 6153']
-  let infoList = [`${usedsizeGB} GB | ${totalsizeGB} GB | ${toPercent(proportion)}`];
+  let infoList = [`${bytesToSize(used) | ${totalsizeGB} GB`];
 
   if (resetDayLeft) {
     //infoList.push(`流量重置：剩余${resetDayLeft}天`);
@@ -60,7 +60,7 @@ let resetDayLeft = getRmainingDays(resetDay);
     infoList.push(`Expire : ${formatTime(expire)}`);
   }
   if (proportion) {
-    infoList.push(`Usage : ${toPercent(proportion)}`);
+    infoList.push(`Utilization : ${toPercent(proportion)}`);
   }  
   sendNotification(used / total, expire, infoList);
   let body = infoList.map((item, index) => item+localProxy[index]).join("\n");
