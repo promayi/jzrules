@@ -46,7 +46,7 @@ let resetDayLeft = getRmainingDays(resetDay);
   let totalsizeGB = totalsize.toFixed(0)
   let expire = usage.expire || args.expire;
   let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153','=socks5,localhost, 6153']
-  let infoList = [`${bytesToSize(used)} | ${totalsizeGB} GB`];
+  let infoList = [`${bytesToSize(used)} | ${totalsizeGB} GB | ${toPercent(proportion)}`];
 
   if (resetDayLeft) {
     //infoList.push(`流量重置：剩余${resetDayLeft}天`);
@@ -58,7 +58,7 @@ let resetDayLeft = getRmainingDays(resetDay);
     infoList.push(`Expire : ${formatTime(expire)}`);
   }
   if (proportion) {
-    infoList.push(`Traffic Usage : ${toPercent(proportion)}`);
+    infoList.push(`Usage : ${toPercent(proportion)}`);
   }  
   sendNotification(used / total, expire, infoList);
   let body = infoList.map((item, index) => item+localProxy[index]).join("\n");
@@ -213,6 +213,6 @@ function sleep(ms) {
 }
 
 function toPercent(proportion) {
-  const percent = Number(proportion*100).toFixed(2);
+  const percent = Number(proportion*100).toFixed(0);
   return `${percent}%`
 }
