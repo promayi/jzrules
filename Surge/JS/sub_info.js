@@ -41,18 +41,20 @@ let resetDayLeft = getRmainingDays(resetDay);
   }
   let used = usage.download + usage.upload;
   let total = usage.total;
+  let totalsize = total / 1073741824;
+  let totalsizeGB = totalsize.toFixed(0)
   let expire = usage.expire || args.expire;
   let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153']
-  let infoList = [`${bytesToSize(used)} | ${bytesToSize(total)}`];
+  let infoList = [`${bytesToSize(used)} | ${bytesToSize(totalsizeGB)}`];
 
   if (resetDayLeft) {
     //infoList.push(`流量重置：剩余${resetDayLeft}天`);
-    infoList.push(`𝗥𝗲𝘀𝗲𝘁𝘀 in ${resetDayLeft} Day`);
+    infoList.push(`Resets in ${resetDayLeft} Day`);
   }
   if (expire) {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
     //infoList.push(`套餐到期：${formatTime(expire)}`);
-    infoList.push(`𝗘𝘅𝗽𝗶𝗿𝗲 : ${formatTime(expire)}`);
+    infoList.push(`Expire : ${formatTime(expire)}`);
   }
   sendNotification(used / total, expire, infoList);
   let body = infoList.map((item, index) => item+localProxy[index]).join("\n");
