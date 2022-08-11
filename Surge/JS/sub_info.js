@@ -41,10 +41,11 @@ let resetDayLeft = getRmainingDays(resetDay);
   }
   let used = usage.download + usage.upload;
   let total = usage.total;
+  let proportion = used / total;
   let totalsize = total / 1073741824;
   let totalsizeGB = totalsize.toFixed(0)
   let expire = usage.expire || args.expire;
-  let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153']
+  let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153','=socks5,localhost, 6153']
   let infoList = [`${bytesToSize(used)} | ${totalsizeGB} GB`];
 
   if (resetDayLeft) {
@@ -56,6 +57,9 @@ let resetDayLeft = getRmainingDays(resetDay);
     //infoList.push(`套餐到期：${formatTime(expire)}`);
     infoList.push(`Expire : ${formatTime(expire)}`);
   }
+  if (proportion) {
+    infoList.push(`Traffic Usage : ${toPercent(proportion)}`);
+  }  
   sendNotification(used / total, expire, infoList);
   let body = infoList.map((item, index) => item+localProxy[index]).join("\n");
   $done({ response: { body } });
@@ -206,4 +210,9 @@ function is_enhanced_mode() {
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+function toPercent(proportion) {
+  const percent = Number(proportion*100).toFixed(2);
+  return `${percent}%`
 }
