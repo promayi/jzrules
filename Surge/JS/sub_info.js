@@ -41,8 +41,8 @@ let resetDayLeft = getRmainingDays(resetDay);
   }
   let used = usage.download + usage.upload;
   let total = usage.total;
-  let totalsize = total / 1073741824;
-  let totalsizeGB = totalsize.toFixed(0)
+  //let totalsize = total / 1073741824;
+  let totalsizeGB = total.toFixed(0)
   let expire = usage.expire || args.expire;
   let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153']
   let infoList = [`${bytesToSize(used)} | ${bytesToSize(totalsizeGB)}`];
