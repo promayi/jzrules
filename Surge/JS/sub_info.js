@@ -42,11 +42,13 @@ let resetDayLeft = getRmainingDays(resetDay);
   let used = usage.download + usage.upload;
   let total = usage.total;
   let proportion = used / total;
+  let usedsize = used / 1073741824;
+  let usedsizeGB = usedsize.toFixed(1)
   let totalsize = total / 1073741824;
   let totalsizeGB = totalsize.toFixed(0)
   let expire = usage.expire || args.expire;
   let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153','=socks5,localhost, 6153']
-  let infoList = [`${bytesToSize(used)} | ${totalsizeGB} GB | ${toPercent(proportion)}`];
+  let infoList = [`${usedsizeGB} GB | ${totalsizeGB} GB | ${toPercent(proportion)}`];
 
   if (resetDayLeft) {
     //infoList.push(`流量重置：剩余${resetDayLeft}天`);
