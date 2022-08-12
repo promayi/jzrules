@@ -1,16 +1,24 @@
 /*
-Surge配置参考注释,感谢@congcong.
+Surge配置参考注释，感谢@asukanana,感谢@congcong.
+
 示例↓↓↓ 
 ----------------------------------------
+
 [Proxy Group]
-AmyInfo = select, policy-path=http://sub.jz?url=机场节点链接&reset_day=1&alert=1, update-interval=3600
+AmyInfo = select, policy-path=http://sub.info?url=机场节点链接&reset_day=1&alert=1, update-interval=3600
+
 [Script]
-Sub_info = type=http-request,pattern=http://sub\.jz,script-path=https://raw.githubusercontent.com/promayi/jzrules/master/Surge/JS/sub_info.js,timeout=10
+Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/laperlarossi/Panel/main/sub_info.js,timeout=10
 ----------------------------------------
+
 脚本不用修改，直接配置就好。
+
 先将带有流量信息的节点订阅链接encode，用encode后的链接替换"url="后面的[机场节点链接]
+
 可选参数 &reset_day，后面的数字替换成流量每月重置的日期，如1号就写1，8号就写8。如"&reset_day=8",不加该参数不显示流量重置信息。
+
 可选参数 &expire，机场链接不带expire信息的，可以手动传入expire参数，如"&expire=2022-02-01",注意一定要按照yyyy-MM-dd的格式。
+
 可选参数 &alert，流量用量超过80%、流量重置2天前、流量重置、套餐快到期，这四种情况会发送通知，参数"title=xxx" 可以自定义通知的标题。如"&alert=1&title=AmyInfo",多个机场信息，且需要通知的情况，一定要加 title 参数，不然通知判断会出现问题
 ----------------------------------------
 */
@@ -33,27 +41,17 @@ let resetDayLeft = getRmainingDays(resetDay);
   }
   let used = usage.download + usage.upload;
   let total = usage.total;
-  let proportion = used / total;
-  //let usedsize = used / 1073741824;
-  //let usedsizeGB = usedsize.toFixed(1)
-  let totalsize = total / 1073741824;
-  let totalsizeGB = totalsize.toFixed(0)
   let expire = usage.expire || args.expire;
-  let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153','=socks5,localhost, 6153']
-  let infoList = [`${bytesToSize(used) | ${totalsizeGB} GB`];
+  let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153']
+  let infoList = [`${bytesToSize(used)} | ${bytesToSize(total)}`];
 
   if (resetDayLeft) {
-    //infoList.push(`流量重置：剩余${resetDayLeft}天`);
-    infoList.push(`Resets in ${resetDayLeft} Day`);
+    infoList.push(`流量重置：剩余${resetDayLeft}天`);
   }
   if (expire) {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
-    //infoList.push(`套餐到期：${formatTime(expire)}`);
-    infoList.push(`Expire : ${formatTime(expire)}`);
+    infoList.push(`套餐到期：${formatTime(expire)}`);
   }
-  if (proportion) {
-    infoList.push(`Utilization : ${toPercent(proportion)}`);
-  }  
   sendNotification(used / total, expire, infoList);
   let body = infoList.map((item, index) => item+localProxy[index]).join("\n");
   $done({ response: { body } });
@@ -131,8 +129,7 @@ function formatTime(time) {
   let year = dateObj.getFullYear();
   let month = dateObj.getMonth() + 1;
   let day = dateObj.getDate();
-  //return year + "年" + month + "月" + day + "日";
-  return year + "-" + month + "-" + day;
+  return year + "年" + month + "月" + day + "日";
 }
 
 function sendNotification(usageRate, expire, infoList) {
@@ -204,9 +201,4 @@ function is_enhanced_mode() {
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
-}
-
-function toPercent(proportion) {
-  const percent = Number(proportion*100).toFixed(2);
-  return `${percent}%`
 }
