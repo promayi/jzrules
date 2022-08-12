@@ -51,10 +51,10 @@ let resetDayLeft = getRmainingDays(resetDay);
   }
   if (expire) {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
-    infoList.push(`Expire : ${formatTime(expire)}`);
+    infoList.push(`Expire：${formatTime(expire)}`);
   }
   if (proportion) {
-    infoList.push(`${toPercent(proportion)}`);
+    infoList.push(`Utilization：${toPercent(proportion)}`);
   }
   sendNotification(used / total, expire, infoList);
   let body = infoList.map((item, index) => item+localProxy[index]).join("\n");
