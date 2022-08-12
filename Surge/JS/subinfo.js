@@ -41,16 +41,20 @@ let resetDayLeft = getRmainingDays(resetDay);
   }
   let used = usage.download + usage.upload;
   let total = usage.total;
+  let proportion = used / total;
   let expire = usage.expire || args.expire;
-  let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153']
+  let localProxy = ['=http, localhost, 6152','=http, 127.0.0.1, 6152','=socks5,127.0.0.1, 6153','=socks5,localhost, 6153']
   let infoList = [`${bytesToSize(used)} | ${bytesToSize(total)}`];
 
   if (resetDayLeft) {
-    infoList.push(`Resets in ${resetDayLeft} day(s)`);
+    infoList.push(`Resets in ${resetDayLeft} day`);
   }
   if (expire) {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
     infoList.push(`Expire : ${formatTime(expire)}`);
+  }
+  if (proportion) {
+    infoList.push(`${toPercent(proportion)}`);
   }
   sendNotification(used / total, expire, infoList);
   let body = infoList.map((item, index) => item+localProxy[index]).join("\n");
