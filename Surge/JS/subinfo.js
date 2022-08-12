@@ -133,7 +133,7 @@ function formatTime(time) {
   let year = dateObj.getFullYear();
   let month = dateObj.getMonth() + 1;
   let day = dateObj.getDate();
-  return year + "年" + month + "月" + day + "日";
+  return year + "-" + month + "-" + day;
 }
 
 function sendNotification(usageRate, expire, infoList) {
@@ -205,4 +205,9 @@ function is_enhanced_mode() {
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+function toPercent(proportion) {
+  const percent = Number(proportion*100).toFixed(2);
+  return `${percent}%`
 }
