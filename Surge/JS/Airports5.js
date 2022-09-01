@@ -9,7 +9,7 @@
   let proportion = used / total;
   let expire = args.expire || info.expire;
   let usedsize = used / 1073741824;
-  let usedsizeGB = usedsize.toFixed(1)
+  let usedsizeGB = usedsize.toFixed(2)
   let totalsize = total / 1073741824;
   let totalsizeGB = totalsize.toFixed(0)
   /*
@@ -116,6 +116,6 @@ function formatTime(time) {
 }
 
 function toPercent(proportion) {
-  const percent = Number(proportion*100).toFixed(2);
+  const percent = Number(proportion*100).toFixed(1);
   return `${percent}%`
 }
