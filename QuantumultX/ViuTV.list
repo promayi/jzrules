@@ -13,7 +13,10 @@ HOST-SUFFIX,firebaseremoteconfig.googleapis.com,ViuTV
 HOST-SUFFIX,googleapis-cn.com,ViuTV
 HOST-SUFFIX,gvt1.com,ViuTV
 HOST-SUFFIX,googleapis.com,ViuTV
-HOST-SUFFIX,sg1.clevertap-prod,ViuTV
+HOST-SUFFIX,sg1.clevertap-prod.com,ViuTV
 HOST-SUFFIX,cloudfront.net,ViuTV
 HOST-SUFFIX,licensing.bitmovin.com,ViuTV
+HOST-SUFFIX,ocsp.sca1b.amazontrust.com,ViuTV
+HOST-SUFFIX,d3o7oi00quuwqu.cloudfront.net,ViuTV
+HOST-SUFFIX,amazonaws.com,ViuTV
 USER-AGENT,Viu*,ViuTV
