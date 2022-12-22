@@ -9,8 +9,8 @@ HOST-SUFFIX,viu.com,ViuTV
 HOST-SUFFIX,viu.now.com,ViuTV
 HOST-SUFFIX,viu.tv,ViuTV
 HOST-SUFFIX,facebook.com,ViuTV
-HOST-SUFFIX,firebaseremoteconfig.googleapis.com,ViuTV
-HOST-SUFFIX,googleapis-cn.com,ViuTV
+#HOST-SUFFIX,firebaseremoteconfig.googleapis.com,ViuTV
+#HOST-SUFFIX,googleapis-cn.com,ViuTV
 HOST-SUFFIX,gvt1.com,ViuTV
 #HOST-SUFFIX,googleapis.com,ViuTV
 HOST-SUFFIX,sg1.clevertap-prod.com,ViuTV
