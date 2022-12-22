@@ -15,10 +15,10 @@ DOMAIN-SUFFIX,viu.com
 DOMAIN-SUFFIX,viu.now.com
 DOMAIN-SUFFIX,viu.tv
 DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
-DOMAIN-SUFFIX,googleapis-cn.com
+#DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
+#DOMAIN-SUFFIX,googleapis-cn.com
 DOMAIN-SUFFIX,gvt1.com
-DOMAIN-SUFFIX,googleapis.com
+#DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,sg1.clevertap-prod.com
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,licensing.bitmovin.com
