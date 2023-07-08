@@ -47,7 +47,7 @@ let resetDayLeft = getRmainingDays(resetDay);
   let infoList = [`${bytesToSize(used)} | ${toPercent(proportion)}`];
 
   if (resetDayLeft) {
-    infoList.push(`Resets in ${resetDayLeft} day`);
+    infoList.push(`Resets in ${resetDayLeft} day/s`);
   }
   if (expire) {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
