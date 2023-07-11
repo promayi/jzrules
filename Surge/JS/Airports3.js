@@ -16,7 +16,7 @@
   let content = [`Used: ${toPercent(proportion)}, ${usedsizeGB} GB, Total: ${totalsizeGB} GB`];
   */
   //let content = [`Used: ${usedsizeGB} GB. Total: ${totalsizeGB} GB`];
-  let content = [`𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days | 𝘌𝘹𝘱: ${expire}`];
+  let content = [`𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} day/s | 𝘌𝘹𝘱: ${expire}`];
   
   
   let now = new Date();
@@ -26,8 +26,8 @@
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    //title: `𝗣𝗿𝗽𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱: 2022/11/10`,
-    title: `𝗣𝗿𝗽𝗿 | 𝘜𝘴𝘢𝘨𝘦 : ${usedsizeGB} GB, ${toPercent(proportion)}`,
+    //title: `𝗔𝗺𝘆 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱: 2024/1/29`,
+    title: `𝗔𝗺𝘆 | 𝘜𝘴𝘢𝘨𝘦 : ${usedsizeGB} GB, ${toPercent(proportion)}`,
     content: content.join("\n"),
   });
 })();
