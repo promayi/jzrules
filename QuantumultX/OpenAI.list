@@ -8,4 +8,6 @@ HOST-SUFFIX,challenges.cloudflare.com,OpenAI
 HOST-SUFFIX,identrust.com,OpenAI
 HOST-SUFFIX,stripe.com,OpenAI
 HOST-SUFFIX,sentry.io,OpenAI
+HOST-SUFFIX,oaiusercontent.com,OpenAI
+HOST-SUFFIX,oaistatic.com,OpenAI
 HOST-KEYWORD,openai,OpenAI
