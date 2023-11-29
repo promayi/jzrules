@@ -1,1 +1,6 @@
+# > XPTV
+
 DOMAIN-SUFFIX,cdnlz11.com
+USER-AGENT,xptv*
+USER-AGENT,XPTV*
+USER-AGENT,Xptv*
