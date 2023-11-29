@@ -2,7 +2,21 @@
 
 DOMAIN-SUFFIX,cdnlz11.com
 DOMAIN-SUFFIX,ffzy-online6.com
+DOMAIN-SUFFIX,ffzyread.com
 DOMAIN-SUFFIX,suonizy-youku.com
+DOMAIN-SUFFIX,kuaikan-cdn3.com
+DOMAIN-SUFFIX,ddys.pro
+DOMAIN-SUFFIX,czzy88.com
+DOMAIN-SUFFIX,wujinzy.com
+
+DOMAIN-KEYWORD,ffzy
+DOMAIN-KEYWORD,cdnlz
+DOMAIN-KEYWORD,suonizy
+DOMAIN-KEYWORD,kuaikan
+DOMAIN-KEYWORD,czzy
+DOMAIN-KEYWORD,kuaikan
+DOMAIN-KEYWORD,wujinzy
+
 USER-AGENT,xptv*
 USER-AGENT,XPTV*
 USER-AGENT,Xptv*
