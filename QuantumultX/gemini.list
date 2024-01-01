@@ -1,0 +1,8 @@
+host-suffix,makersuite.google.com,Gemini
+host-suffix,ai.google.dev,Gemini
+host-suffix,generativelanguage.googleapis.com,Gemini
+host-suffix,bard.google.com,Gemini
+host-suffix,alkalimakersuite-pa.clients6.google.com,Gemini
+host-suffix,deepmind.google,Gemini
+host-suffix,vercel.com,Gemini
+host-suffix,gemini-pro-chat-fawn-three.vercel.app,Gemini
