@@ -1,3 +1,10 @@
+HOST,ac.zox.show,Emby
+HOST,cdnac.zox.show,Emby
+HOST,zox.show,Emby
+HOST,cdn.zox.show,Emby
+HOST,789.123456.al,Emby
+HOST,embyvip.misakaf.org,direct
+HOST,emby.aca.best,Emby
 HOST-SUFFIX,xeton.dev,Emby
 HOST-SUFFIX,emby.wtf,Emby
 HOST-SUFFIX,plusmedia.site,Emby
@@ -5,7 +12,10 @@ HOST-SUFFIX,jmsooo.com,Emby
 HOST-SUFFIX,kyarucloud.moe,Emby
 HOST-SUFFIX,emby.prprcloud.com,Emby
 HOST,play.charontv.com,Emby
+HOST,emby.misakaf.xyz,Emby
+HOST,embyaz.misakaf.xyz,Emby
 HOST-KEYWORD,emby,Emby
+
 #IP-CIDR,38.94.111.0/24,Emby
 # Cloudflare
 #IP-CIDR,173.245.48.0/20,Emby
