@@ -14,7 +14,9 @@ HOST-SUFFIX,emby.prprcloud.com,Emby
 HOST,play.charontv.com,Emby
 HOST,emby.misakaf.xyz,Emby
 HOST,embyaz.misakaf.xyz,Emby
+HOST,push-kr.misakaf.org,Emby
 HOST-KEYWORD,emby,Emby
+IP-CIDR,102.223.180.108/32,Emby
 
 #IP-CIDR,38.94.111.0/24,Emby
 # Cloudflare
