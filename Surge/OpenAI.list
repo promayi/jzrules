@@ -1,6 +1,8 @@
 # NAME: OpenAI
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
+
+#> OpenAI ChatGPT
 DOMAIN,cdn.auth0.com
 DOMAIN,challenges.cloudflare.com
 DOMAIN,openaiapi-site.azureedge.net
@@ -11,12 +13,11 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 
-# Copilot
+#> Copilot
 DOMAIN, api.msn.com
 DOMAIN, assets.msn.com
 DOMAIN, copilot.microsoft.com
 DOMAIN, dealczars.bing-shopping.microsoft-falcon.io
-# DOMAIN, eas.outlook.com
 DOMAIN, edgeservices.bing.com
 DOMAIN, functional.events.data.microsoft.com
 DOMAIN, gateway.bingviz.microsoftapp.net
@@ -35,3 +36,13 @@ DOMAIN, www.bing.com
 DOMAIN, www2.bing.com
 DOMAIN, www.bingapis.com
 DOMAIN-SUFFIX, edge.microsoft.com
+
+#> Google Gemini
+DOMAIN-SUFFIX,makersuite.google.com,🇺🇸 United States
+DOMAIN-SUFFIX,ai.google.dev,🇺🇸 United States
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,🇺🇸 United States
+DOMAIN-SUFFIX,bard.google.com,🇺🇸 United States
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,🇺🇸 United States
+DOMAIN-SUFFIX,deepmind.google,🇺🇸 United States
+DOMAIN-SUFFIX,vercel.com,🇺🇸 United States
+DOMAIN-SUFFIX,gemini-pro-chat-fawn-three.vercel.app,🇺🇸 United States
