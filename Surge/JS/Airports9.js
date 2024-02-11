@@ -119,4 +119,3 @@ function toPercent(proportion) {
   const percent = Number(proportion*100).toFixed(1);
   return `${percent}%`
 }
-
