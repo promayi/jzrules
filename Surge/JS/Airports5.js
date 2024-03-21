@@ -16,7 +16,7 @@
   let content = [`Used: ${toPercent(proportion)}, ${usedsizeGB} GB, Total: ${totalsizeGB} GB`];
   */
   //let content = [`Used: ${usedsizeGB} GB. Total: ${totalsizeGB} GB`];
-  let content = [`𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days | 𝘌𝘹𝘱 : ${expire}`];
+  let content = [`𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} days | 𝘌𝘹𝘱 : ${expire} | 150G`];
 
   let now = new Date();
   let hour = now.getHours();
@@ -26,7 +26,7 @@
 
   $done({
     //title: `𝗙𝗹𝗼𝘄𝗲𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱 : 2022/7/12`,
-    title: `𝗙𝗹𝗼𝘄𝗲𝗿 | 𝘜𝘴𝘢𝘨𝘦 : ${usedsizeGB} GB, ${toPercent(proportion)} | 150GB`,
+    title: `𝗙𝗹𝗼𝘄𝗲𝗿 | 𝘜𝘴𝘢𝘨𝘦 : ${usedsizeGB} GB, ${toPercent(proportion)}`,
     content: content.join("\n"),
   });
 })();
