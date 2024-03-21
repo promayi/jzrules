@@ -26,7 +26,7 @@
 
   $done({
     //title: `𝗙𝗹𝗼𝘄𝗲𝗿 | 𝘙𝘦𝘴𝘦𝘵 : ${resetDayLeft} d | 𝘌𝘹𝘱 : 2022/7/12`,
-    title: `𝗙𝗹𝗼𝘄𝗲𝗿 | 𝘜𝘴𝘢𝘨𝘦 : ${usedsizeGB} GB, ${toPercent(proportion)}`,
+    title: `𝗙𝗹𝗼𝘄𝗲𝗿 | 𝘜𝘴𝘢𝘨𝘦 : ${usedsizeGB} GB, ${toPercent(proportion)} | 150GB`,
     content: content.join("\n"),
   });
 })();
