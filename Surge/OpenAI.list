@@ -46,3 +46,7 @@ DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,vercel.com
 DOMAIN-SUFFIX,gemini-pro-chat-fawn-three.vercel.app
+
+#> hume.ai
+DOMAIN-SUFFIX,hume.ai
+
