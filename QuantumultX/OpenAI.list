@@ -1,13 +1,51 @@
 # NAME: OpenAI
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-HOST,cdn.auth0.com,OpenAI
-HOST,o33249.ingest.sentry.io,OpenAI
-HOST-SUFFIX,ai.com,OpenAI
-HOST-SUFFIX,challenges.cloudflare.com,OpenAI
-HOST-SUFFIX,identrust.com,OpenAI
-HOST-SUFFIX,stripe.com,OpenAI
-HOST-SUFFIX,sentry.io,OpenAI
-HOST-SUFFIX,oaiusercontent.com,OpenAI
-HOST-SUFFIX,oaistatic.com,OpenAI
-HOST-KEYWORD,openai,OpenAI
+
+#> OpenAI ChatGPT
+HOST,cdn.auth0.com
+HOST,challenges.cloudflare.com
+HOST,openaiapi-site.azureedge.net
+HOST-SUFFIX,ai.com
+HOST-SUFFIX,identrust.com
+HOST-SUFFIX,openai.com
+HOST-SUFFIX,sentry.io
+HOST-SUFFIX,oaistatic.com
+HOST-SUFFIX,oaiusercontent.com
+
+#> Copilot
+HOST, api.msn.com
+HOST, assets.msn.com
+HOST, copilot.microsoft.com
+HOST, dealczars.bing-shopping.microsoft-falcon.io
+HOST, edgeservices.bing.com
+HOST, functional.events.data.microsoft.com
+HOST, gateway.bingviz.microsoftapp.net
+HOST, location.microsoft.com
+HOST, login.microsoftonline.com
+HOST, proteus-assetstore.azurewebsites.net
+HOST, self.events.data.microsoft.com
+HOST, services.bingapis.com
+HOST, shopping.bing-shopping.microsoft-falcon.io
+HOST, sapphire.api.microsoftapp.net
+HOST, sr.bing.com
+HOST, sydney.bing.com
+HOST, ssl.bing.com
+HOST, th.bing.com
+HOST, www.bing.com
+HOST, www2.bing.com
+HOST, www.bingapis.com
+HOST-SUFFIX, edge.microsoft.com
+
+#> Google Gemini
+HOST-SUFFIX,makersuite.google.com
+HOST-SUFFIX,ai.google.dev
+HOST-SUFFIX,generativelanguage.googleapis.com
+HOST-SUFFIX,bard.google.com
+HOST-SUFFIX,alkalimakersuite-pa.clients6.google.com
+HOST-SUFFIX,deepmind.google
+HOST-SUFFIX,vercel.com
+HOST-SUFFIX,gemini-pro-chat-fawn-three.vercel.app
+
+#> hume.ai
+HOST-SUFFIX,hume.ai
