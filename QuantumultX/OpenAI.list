@@ -3,7 +3,7 @@
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 
 #> OpenAI ChatGPT
-HOST,cdn.auth0.com
+#HOST,cdn.auth0.com
 HOST,challenges.cloudflare.com
 HOST,openaiapi-site.azureedge.net
 HOST-SUFFIX,ai.com
