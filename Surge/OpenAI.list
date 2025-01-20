@@ -55,6 +55,11 @@ DOMAIN-SUFFIX,hume.ai
 #> perplexity
 DOMAIN-SUFFIX,perplexity.ai
 
+#> Claude
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
 #> other
 DOMAIN-KEYWORD,openai
 IP-CIDR,24.199.123.28/32,no-resolve
