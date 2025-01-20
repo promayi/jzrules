@@ -56,9 +56,9 @@ DOMAIN-SUFFIX,hume.ai
 DOMAIN-SUFFIX,perplexity.ai
 
 #> Claude
-DOMAIN,cdn.usefathom.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
+#DOMAIN,cdn.usefathom.com
+#DOMAIN-SUFFIX,anthropic.com
+#DOMAIN-SUFFIX,claude.ai
 
 #> other
 DOMAIN-KEYWORD,openai
