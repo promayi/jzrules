@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN,browser-intake-datadoghq.com
 
 #> Copilot
 DOMAIN,api.msn.com
