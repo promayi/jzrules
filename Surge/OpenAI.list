@@ -126,3 +126,4 @@ IP-ASN,20473,no-resolve
 
 # Grok
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grokusercontent.com
